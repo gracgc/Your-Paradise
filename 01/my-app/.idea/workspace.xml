@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22d004ce-363c-4c27-ab30-581a62d12046" name="Default Changelist" comment="1234">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Thumbs.db" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="gracgc &lt;61702739+gracgc@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1aDk5Nbe6wIHnMXJKVsBkLDIZak" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Header" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Profile" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\assets\images" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\assets" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Users\User" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Navbar" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Header" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\redux" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Dialogs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.App.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22d004ce-363c-4c27-ab30-581a62d12046" name="Default Changelist" comment="" />
+      <created>1586277367708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586277367708</updated>
+      <workItem from="1586277370871" duration="3698000" />
+      <workItem from="1586283637317" duration="1075000" />
+      <workItem from="1586814836918" duration="708000" />
+      <workItem from="1586815581360" duration="347000" />
+      <workItem from="1586815957813" duration="3440000" />
+      <workItem from="1586852664532" duration="1284000" />
+      <workItem from="1586853983299" duration="5693000" />
+      <workItem from="1587145054949" duration="2140000" />
+      <workItem from="1587147225584" duration="1819000" />
+      <workItem from="1587233951113" duration="7311000" />
+      <workItem from="1587475584971" duration="4106000" />
+      <workItem from="1587611129284" duration="13804000" />
+      <workItem from="1587651998894" duration="3087000" />
+      <workItem from="1587722024745" duration="2591000" />
+      <workItem from="1587726415931" duration="685000" />
+      <workItem from="1587798407944" duration="1481000" />
+      <workItem from="1588001433287" duration="5429000" />
+      <workItem from="1588168430739" duration="3497000" />
+      <workItem from="1588174162697" duration="6142000" />
+      <workItem from="1588231464927" duration="10345000" />
+      <workItem from="1588522826202" duration="6036000" />
+      <workItem from="1588602176400" duration="6649000" />
+      <workItem from="1588675163880" duration="1766000" />
+      <workItem from="1588760663246" duration="6968000" />
+      <workItem from="1588860429060" duration="2336000" />
+      <workItem from="1588863255044" duration="1336000" />
+      <workItem from="1588869450007" duration="3572000" />
+      <workItem from="1588931584944" duration="1229000" />
+      <workItem from="1588956511787" duration="1464000" />
+      <workItem from="1588958024608" duration="1728000" />
+      <workItem from="1589038201171" duration="5017000" />
+      <workItem from="1589068632821" duration="1502000" />
+      <workItem from="1589103630744" duration="11140000" />
+      <workItem from="1589127603834" duration="2372000" />
+      <workItem from="1589208150103" duration="4587000" />
+      <workItem from="1589616942142" duration="10190000" />
+      <workItem from="1589672690393" duration="5708000" />
+      <workItem from="1589679633178" duration="2845000" />
+      <workItem from="1589705017632" duration="14611000" />
+      <workItem from="1589784282799" duration="7627000" />
+    </task>
+    <task id="LOCAL-00001" summary="123">
+      <created>1588249013285</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588249013285</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123" />
+    <MESSAGE value="3" />
+    <MESSAGE value="1234" />
+    <option name="LAST_COMMIT_MESSAGE" value="1234" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+        <item name="my-app" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>
