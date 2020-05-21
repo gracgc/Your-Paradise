@@ -9,25 +9,24 @@ import {
 import * as axios from 'axios';
 import User from "./User";
 import Preloader from "../../../common/Preloader/Preloader";
+import {userAPI} from "./../../../api/api";
 
 
 class UserComponent extends React.Component {
     componentDidMount() {
         this.props.toogleFetch(true);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
-            .then(response => {
-                this.props.setUsers(response.data.items);
-                this.props.toogleFetch(false);
-                this.props.setTotalUsersCount(response.data.totalCount);
-            });
+        userAPI.getUsers(this.props.currentPage, this.props.pageSize).then(data => {
+            this.props.toogleFetch(false);
+            this.props.setUsers(data.items);
+            this.props.setTotalUsersCount(data.totalCount);
+        });
     }
 
     onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
         this.props.toogleFetch(true);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`)
-            .then(response => {
-                this.props.setUsers(response.data.items)
+        userAPI.getUsers(pageNumber, this.props.pageSize).then(data => {
+                this.props.setUsers(data.items);
                 this.props.toogleFetch(false);
             })
     };
@@ -35,7 +34,7 @@ class UserComponent extends React.Component {
 
     render() {
         return <>
-            { this.props.isFetching ? <Preloader/> : null }
+            {this.props.isFetching ? <Preloader/> : null}
             <User totalPageCount={this.props.totalPageCount}
                   pageSize={this.props.pageSize}
                   currentPage={this.props.currentPage}
