@@ -1,12 +1,11 @@
 import React from "react";
 import {connect} from "react-redux";
 import {
-    followActionCreator,
-    setCurrentPageActionCreator, setTotalUsersCountActionCreator,
-    setUsersActionCreator, toogleFetchActionCreator,
-    unfollowActionCreator
+    follow,
+    setCurrentPage, setTotalUsersCount,
+    setUsers, toogleFetch,
+    unfollow
 } from "../../../redux/users_reducer";
-import * as axios from 'axios';
 import User from "./User";
 import Preloader from "../../../common/Preloader/Preloader";
 import {userAPI} from "./../../../api/api";
@@ -26,9 +25,9 @@ class UserComponent extends React.Component {
         this.props.setCurrentPage(pageNumber);
         this.props.toogleFetch(true);
         userAPI.getUsers(pageNumber, this.props.pageSize).then(data => {
-                this.props.setUsers(data.items);
-                this.props.toogleFetch(false);
-            })
+            this.props.setUsers(data.items);
+            this.props.toogleFetch(false);
+        })
     };
 
 
@@ -58,29 +57,9 @@ const mapStateToProps = (state) => {
     }
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        follow: (userId) => {
-            dispatch(followActionCreator(userId))
-        },
-        unfollow: (userId) => {
-            dispatch(unfollowActionCreator(userId))
-        },
-        setUsers: (users) => {
-            dispatch(setUsersActionCreator(users))
-        },
-        setCurrentPage: (currentPage) => {
-            dispatch(setCurrentPageActionCreator(currentPage))
-        },
-        setTotalUsersCount: (totalPageCount) => {
-            dispatch(setTotalUsersCountActionCreator(totalPageCount))
-        },
-        toogleFetch: (isFetching) => {
-            dispatch(toogleFetchActionCreator(isFetching))
-        }
-    }
-};
 
-const UserContainer = connect(mapStateToProps, mapDispatchToProps)(UserComponent);
+export default connect(mapStateToProps, {
+    follow, unfollow, setUsers, setCurrentPage, setTotalUsersCount, toogleFetch
+})(UserComponent);
 
-export default UserContainer;
+

@@ -1,0 +1,11 @@
+.textAreaPost {
+    width: 500px;
+    height: 100px;
+    resize: none;
+}
+
+/*.myPosts {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+
+/*}*/

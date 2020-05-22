@@ -1,10 +1,9 @@
 import React from "react";
-import c from './MyPosts.module.css'
+import c from './MyPostsInput.module.css'
 import Post from "./Post1/Post";
 
 
-
-const MyPosts = (props) => {
+const MyPostsInput = (props) => {
 
     let postElement = props.posts.map((p) => <Post text={p.text} img={p.img} key={p.id}/>);
 
@@ -27,13 +26,14 @@ const MyPosts = (props) => {
 
 
     return (
-        <div>
+        <div className={c.myPosts}>
             <h3>My posts</h3>
-            <div>
-                <textarea className={c.textAreaPost} placeholder={'New post...'} onChange={onPostChange} ref={newPostElement}
+            <div className={c.newPost}>
+                <textarea className={c.textAreaPost} placeholder={'New post...'} onChange={onPostChange}
+                          ref={newPostElement}
                           value={props.newPostText}></textarea>
-                <button onClick={onAddPost}>Add post</button>
             </div>
+            <button onClick={onAddPost}>Add post</button>
             <div className={c.posts}>
                 {postElement}
             </div>
@@ -43,4 +43,4 @@ const MyPosts = (props) => {
     );
 }
 
-export default MyPosts;
+export default MyPostsInput;

@@ -1,15 +1,20 @@
 import React from "react";
 import c from './Profile1.module.css'
-import MyPostsContainer from "./MyPosts/MyPostsContainer";
+import MyPostsInputContainer from "./MyPosts/MyPostsInputContainer";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 
 
 const Profile1 = (props) => {
     return (
-        <div>
-            <ProfileInfo profile={props.profile}/>
-            <MyPostsContainer/>
+        <div className={c.profile}>
+            <div>
+                <ProfileInfo profile={props.profile}/>
+                <MyPostsInputContainer/>
+            </div>
+            <div>
+
+            </div>
         </div>
     );
 };
