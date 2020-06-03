@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22d004ce-363c-4c27-ab30-581a62d12046" name="Default Changelist" comment="1234">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsInput.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsInputContainer.jsx" afterDir="false" />
+    <list default="true" id="22d004ce-363c-4c27-ab30-581a62d12046" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsListContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsInputContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsInputContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post1/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post1/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post1/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post1/Post.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile1.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile1.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile1.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile1Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile1Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/User/UserContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User/UserContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile_reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/MyPosts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -75,19 +67,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Groovy\Documents\GitHub\Your-Paradise\01\my-app\src\components\Profile\MyPosts" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Header" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\redux" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src" />
+      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Profile\ProfileInfo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Profile" />
       <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\assets\images" />
       <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\assets" />
       <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Users\User" />
       <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Navbar" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Header" />
-      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\redux" />
-      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src" />
-      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Profile\ProfileInfo" />
-      <recent name="C:\Users\Groovy\Desktop\react\01\my-app\src\components\Dialogs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,7 +156,7 @@
       <workItem from="1589784282799" duration="7627000" />
       <workItem from="1589980983186" duration="6144000" />
       <workItem from="1590038298772" duration="4327000" />
-      <workItem from="1590161476616" duration="6545000" />
+      <workItem from="1590161476616" duration="11351000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1588249013285</created>
@@ -173,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588249013285</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1234">
+      <created>1590172902455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590172902455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

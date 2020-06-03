@@ -5,11 +5,13 @@ import c from './Post.module.css'
 
 const Post = (props) => {
     return (
-        <div className={c.post}>
-            <img src={props.img} alt=""/>
-            <span>
+        <div className={c.postBody}>
+            <div className={c.postAvatar}>
+                <img src={props.img} alt=""/>
+            </div>
+            <div className={c.post}>
                 {props.text}
-            </span>
+            </div>
         </div>
     );
 }
