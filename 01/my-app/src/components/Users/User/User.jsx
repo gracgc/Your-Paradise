@@ -3,6 +3,7 @@ import c from './User.module.css'
 import userPhoto from '../../../assets/images/user.jpg';
 import classNames from 'classnames';
 import {NavLink} from "react-router-dom";
+import {followAPI, unfollowAPI} from "../../../api/api";
 
 const User = (props) => {
 
@@ -12,17 +13,16 @@ const User = (props) => {
         pages.push(i)
     }
 
-
     return (
         <div>
             <div>
                 {pages.map(p => {
                     return <div className={classNames(props.currentPage === p && c.selectedPage, c.pageNumber)}
-                                 onClick={(e) => {
-                                     props.onPageChanged(p);
-                                 }}>
-                            {p}
-                        </div>
+                                onClick={(e) => {
+                                    props.onPageChanged(p);
+                                }}>
+                        {p}
+                    </div>
                 })}
 
 
@@ -39,10 +39,18 @@ const User = (props) => {
                 <div>
                     {u.followed
                         ? <button onClick={(e) => {
-                            props.unfollow(u.id)
+                            followAPI.isFollow(u.id).then(response => {
+                                if (response.resultCode == 0) {
+                                    this.props.unfollow
+                                }
+                            })
                         }}>Unfollow</button>
-                        : <button onClick={() => {
-                            props.follow(u.id)
+                        : <button onClick={(e) => {
+                            unfollowAPI.isFollow(u.id).then(response => {
+                                if (response.resultCode == 0) {
+                                    this.props.follow
+                                }
+                            })
                         }}>Follow</button>
                     }
                 </div>
