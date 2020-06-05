@@ -3,6 +3,7 @@ import c from './User.module.css'
 import userPhoto from '../../../assets/images/user.jpg';
 import classNames from 'classnames';
 import {NavLink} from "react-router-dom";
+import {userAPI} from "../../../api/api";
 
 const User = (props) => {
 
@@ -18,11 +19,11 @@ const User = (props) => {
             <div>
                 {pages.map(p => {
                     return <div className={classNames(props.currentPage === p && c.selectedPage, c.pageNumber)}
-                                 onClick={(e) => {
-                                     props.onPageChanged(p);
-                                 }}>
-                            {p}
-                        </div>
+                                onClick={(e) => {
+                                    props.onPageChanged(p);
+                                }}>
+                        {p}
+                    </div>
                 })}
 
 
@@ -38,12 +39,26 @@ const User = (props) => {
 
                 <div>
                     {u.followed
-                        ? <button onClick={(e) => {
-                            props.unfollow(u.id)
-                        }}>Unfollow</button>
-                        : <button onClick={() => {
-                            props.follow(u.id)
-                        }}>Follow</button>
+                        ? <button disabled={props.followingInProgress.some(id => id === u.id)}
+                                  onClick={() => {
+                                      props.toogleFollowing(true, u.id);
+                                      userAPI.unfollow(u.id).then(response => {
+                                          if (response.data.resultCode == 0) {
+                                              props.unfollow(u.id)
+                                          }
+                                          props.toogleFollowing(false, u.id);
+                                      })
+                                  }}>Unfollow</button>
+                        : <button disabled={props.followingInProgress.some(id => id === u.id)}
+                                  onClick={() => {
+                                      props.toogleFollowing(true, u.id);
+                                      userAPI.follow(u.id).then(response => {
+                                          if (response.data.resultCode == 0) {
+                                              props.follow(u.id);
+                                          }
+                                          props.toogleFollowing(false, u.id);
+                                      })
+                                  }}>Follow</button>
                     }
                 </div>
             </span>
