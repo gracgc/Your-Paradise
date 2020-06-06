@@ -1,8 +1,5 @@
 .nav {
-    grid-area: n;
-    background-color: #ffccff;
-    padding-left: 10px;
-    padding-top: 10px;
+    width: 80px;
 }
 
 a {

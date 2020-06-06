@@ -1,16 +1,29 @@
 .app-wrapper {
-
-    max-width: 1400px;
     display: grid;
-
-    grid-template-areas: 'h h' 'n c';
-    grid-template-rows: 70px 1fr;
-    grid-template-columns: 90px 10fr;
-
+    grid-template-row: 70px 1fr;
+    font-family: oblique;
+    max-width: 1400px;
 }
 
-.app-wrapper-content {
-    grid-area: c;
+.header {
+    background-color: aquamarine;
+    display: flex;
+}
+
+.app-wrapper-content-navbar {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ffccff;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 100%;
+}
+
+.content {
     background-color: lightgoldenrodyellow;
     padding: 50px;
 }

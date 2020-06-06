@@ -64,7 +64,6 @@ const User = (props) => {
             </span>
                     <span>
                 <div>
-                    {u.status}
                     {u.name}
                 </div>
             </span>

@@ -3,3 +3,9 @@
     border-radius: 20%;
     border: solid 2px pink;
 }
+
+.infoBlock {
+    display: inline-flex;
+}
+
+

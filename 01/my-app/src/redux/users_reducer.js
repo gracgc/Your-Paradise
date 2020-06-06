@@ -86,5 +86,4 @@ export const setTotalUsersCount = (totalPageCount) => ({type: SET_TOTAL_COUNT, t
 export const toogleFetch = (isFetching) => ({type: TOOGLE_FETCH, isFetching});
 export const toogleFollowing = (isFetching, userId) => ({type: TOOGLE_FOLLOWING, isFetching, userId});
 
-
 export default usersReducer;
