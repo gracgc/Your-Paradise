@@ -8,12 +8,10 @@ import musicIMG from '../../assets/images/music_icon.png'
 import newsIMG from '../../assets/images/news_icon.png'
 
 
-
-
 const Navbar = () => {
 
     return (
-        <nav className={c.nav}>
+        <div className={c.nav}>
             <NavLink to="/profile" className={c.hov} activeClassName={c.activeLink}>
                 <div className={c.navButton}>
                     <img src={profileIMG} className={c.iconImg}/>
@@ -47,14 +45,14 @@ const Navbar = () => {
                     </div>
                 </NavLink>
             </div>
-
-            <NavLink to="/settings" className={c.hov} activeClassName={c.activeLink}>
-                <div className={c.navButton}>
-                    <img src={settingsIMG} className={c.iconImg}/>
-                </div>
-            </NavLink>
-
-        </nav>
+            <div>
+                <NavLink to="/settings" className={c.hov} activeClassName={c.activeLink}>
+                    <div className={c.navButton}>
+                        <img src={settingsIMG} className={c.iconImg}/>
+                    </div>
+                </NavLink>
+            </div>
+        </div>
     );
 };
 

@@ -33,5 +33,4 @@ let App = (props) => {
     );
 };
 
-
 export default App;

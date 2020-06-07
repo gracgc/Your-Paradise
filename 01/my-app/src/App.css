@@ -1,13 +1,14 @@
 .app-wrapper {
-    display: grid;
-    grid-template-row: 70px 1fr;
     font-family: oblique;
     max-width: 1400px;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    height: 100vh;
 }
 
 .header {
+    display: block;
     background-color: aquamarine;
-    display: flex;
 }
 
 .app-wrapper-content-navbar {
@@ -16,14 +17,14 @@
 }
 
 .navbar {
-    display: flex;
+    display: block;
     background-color: #ffccff;
     padding-left: 10px;
-    padding-top: 10px;
-    height: 100%;
+    padding-top: 20px;
 }
 
 .content {
+    display: block;
     background-color: lightgoldenrodyellow;
     padding: 50px;
 }
