@@ -5,10 +5,11 @@ import {BrowserRouter, Route} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import Users from "./components/Users/Users";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import Profile1Container from "./components/Profile/Profile1Container";
 import HeaderContainer from "./components/Header/HeaderContainer";
+import UsersContainer from "./components/Users/UsersContainer";
+import Login from "./components/Login/Login";
 
 
 let App = (props) => {
@@ -22,10 +23,11 @@ let App = (props) => {
                         <Route path='/dialogs' render={() => <DialogsContainer/>}/>
                         <Route path='/profile/:userId?'
                                render={() => <Profile1Container/>}/>
-                        <Route path='/users' render={() => <Users/>}/>
+                        <Route path='/users' render={() => <UsersContainer/>}/>
                         <Route path='/news' render={() => <News/>}/>
                         <Route path='/music' render={() => <Music/>}/>
                         <Route path='/settings' render={() => <Settings/>}/>
+                        <Route path='/login' render={() => <Login/>}/>
                     </div>
                 </div>
             </div>

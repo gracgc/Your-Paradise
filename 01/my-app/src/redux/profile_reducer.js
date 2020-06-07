@@ -1,3 +1,6 @@
+import {profileAPI, userAPI} from "../api/api";
+import {setTotalUsersCount, setUsers, toogleFetch} from "./users_reducer";
+
 let ADD_POST = 'ADD_POST';
 let UPDATE_POST_TEXT = 'UPDATE_POST_TEXT';
 let SET_USER_PROFILE = 'SET_USER_PROFILE';
@@ -48,5 +51,12 @@ export const addPost = () => ({type: ADD_POST});
 export const updatePostText = (text) => ({type: UPDATE_POST_TEXT, newText: text});
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
 
+export const getUserProfile = (userId) => {
+    return (dispatch) => {
+        profileAPI.getProfile(userId).then(response => {
+            dispatch(setUserProfile(response.data));
+        })
+    }
+};
 
 export default profileReducer;

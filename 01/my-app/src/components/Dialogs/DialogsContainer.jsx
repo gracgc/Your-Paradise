@@ -1,8 +1,21 @@
 import React from "react";
 import {connect} from "react-redux";
 import Dialogs from "./Dialogs";
+import {compose} from "redux";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import Preloader from "../../common/Preloader/Preloader";
 
 
+class DialogsComponent extends React.Component {
+
+    render() {
+        return <>
+            {this.props.isFetching ? <Preloader/> : null}
+            <Dialogs {...this.props} dialogs={this.props.dialogs} massages={this.props.massages}
+            />
+        </>
+    }
+}
 
 const mapStateToProps = (state) => {
     return {
@@ -11,8 +24,9 @@ const mapStateToProps = (state) => {
     }
 };
 
+export default compose(
+    connect(mapStateToProps),
+    withAuthRedirect
+)
+(DialogsComponent);
 
-
-const DialogsContainer = connect(mapStateToProps)(Dialogs);
-
-export default DialogsContainer;
