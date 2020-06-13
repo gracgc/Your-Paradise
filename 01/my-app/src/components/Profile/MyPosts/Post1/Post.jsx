@@ -12,7 +12,7 @@ const Post = (props) => {
                 <img src={props.img} alt=""/>
             </div>
             <pre className={c.post}>
-                {props.text}
+                {props.text}1
             </pre>
         </div>
     );
