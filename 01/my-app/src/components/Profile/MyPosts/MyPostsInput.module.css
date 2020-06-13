@@ -1,11 +1,14 @@
 .textAreaPost {
     width: 500px;
-    height: 100px;
+    height: 125px;
     resize: none;
 }
 
-/*.myPosts {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 1fr;*/
+.newPost textarea {
+    background-color: #fbffe3;
+    border-color: #f6a7fa;
+    padding: 10px;
+}
 
-/*}*/
+.newPost textarea::-webkit-scrollbar {width:0px;}
+

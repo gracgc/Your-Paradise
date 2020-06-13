@@ -3,11 +3,11 @@
     height: 100px;
     margin-top: 20px;
     border-radius: 20%;
-    border: solid 2px pink;
+    border: solid 2px #ffccff;
 }
 
 .avatar:hover {
-    border:solid 3px pink;
+    border:solid 3px #ffccff;
 }
 
 .selectedPage {
@@ -24,7 +24,7 @@
     display: inline-block;
     text-align: center;
     border-radius: 20%;
-    border: solid 2px pink;
+    border: solid 2px #ffccff;
 
 }
 

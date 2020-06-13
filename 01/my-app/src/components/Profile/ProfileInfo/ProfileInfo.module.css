@@ -1,7 +1,7 @@
 .avatar {
-    width: 250px;
-    border-radius: 20%;
-    border: solid 2px pink;
+    width: 225px;
+    border-radius: 10%;
+    border: solid 2px #ffccff;
 }
 
 .infoBlock {

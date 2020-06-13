@@ -1,0 +1,7 @@
+.myPosts {
+    overflow-y: scroll;
+    max-height: 75vh;
+}
+
+.myPosts::-webkit-scrollbar {width:0px;}
+

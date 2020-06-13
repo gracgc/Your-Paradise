@@ -1,6 +1,5 @@
 import React from "react";
 import c from './MyPostsInput.module.css'
-import Post from "./Post1/Post";
 
 
 const MyPostsInput = (props) => {
@@ -20,7 +19,7 @@ const MyPostsInput = (props) => {
         let text = newPostElement.current.value;
         props.updatePostText(text);
 
-    }
+    };
 
 
     return (
@@ -33,7 +32,7 @@ const MyPostsInput = (props) => {
             </div>
             <button onClick={onAddPost}>Add post</button>
         </div>
-    );
-}
+    )
+};
 
 export default MyPostsInput;

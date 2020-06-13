@@ -4,6 +4,7 @@
     display: grid;
     grid-template-rows: 70px 1fr;
     height: 100vh;
+    /*overflow: hidden;*/
 }
 
 .header {
@@ -26,7 +27,7 @@
 .content {
     display: block;
     background-color: lightgoldenrodyellow;
-    padding: 50px 50px 0 50px;
+    padding: 50px 50px 25px 50px;
 }
 
 

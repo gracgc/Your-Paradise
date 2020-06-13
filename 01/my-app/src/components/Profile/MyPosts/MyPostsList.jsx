@@ -1,5 +1,5 @@
 import React from "react";
-import c from './MyPostsInput.module.css'
+import c from './MyPostsList.module.css'
 import Post from "./Post1/Post";
 
 

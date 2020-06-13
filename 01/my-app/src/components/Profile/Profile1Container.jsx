@@ -34,8 +34,8 @@ export default compose(
     connect(mapStateToProps, {
         getUserProfile
     }),
+    withRouter,
     withAuthRedirect,
-    withRouter
 )
 (Profile1Component);
 
