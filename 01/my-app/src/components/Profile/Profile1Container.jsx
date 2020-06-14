@@ -19,14 +19,15 @@ class Profile1Component extends React.Component {
 
     render() {
         return <>
-            <Profile1 {...this.props} profile={this.props.profile}/>
+            <Profile1 {...this.props} profile={this.props.profile} posts={this.props.posts}/>
         </>
     }
 }
 
 const mapStateToProps = (state) => {
     return {
-        profile: state.profilePage.profile
+        profile: state.profilePage.profile,
+        posts: state.profilePage.posts
     }
 };
 

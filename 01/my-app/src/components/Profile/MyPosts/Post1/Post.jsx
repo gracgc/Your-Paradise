@@ -12,11 +12,11 @@ const Post = (props) => {
                 <img src={props.img} alt=""/>
             </div>
             <pre className={c.post}>
-                {props.text}1
+                {props.text}
             </pre>
         </div>
-    );
-}
+    )
+};
 
 
 

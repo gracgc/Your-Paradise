@@ -2,7 +2,7 @@ import React from "react";
 import c from './Profile1.module.css'
 import MyPostsInputContainer from "./MyPosts/MyPostsInputContainer";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import MyPostsListContainer from "./MyPosts/MyPostsListContainer";
+import MyPostsList from "./MyPosts/MyPostsList";
 
 
 
@@ -15,7 +15,7 @@ const Profile1 = (props) => {
                 <MyPostsInputContainer/>
             </div>
             <div>
-                <MyPostsListContainer/>
+                <MyPostsList profile={props.profile} posts={props.posts}/>
             </div>
         </div>
     );
