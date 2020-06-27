@@ -4,6 +4,7 @@ import {setTotalUsersCount, setUsers, toogleFetch} from "./users_reducer";
 let ADD_POST = 'ADD_POST';
 let UPDATE_POST_TEXT = 'UPDATE_POST_TEXT';
 let SET_USER_PROFILE = 'SET_USER_PROFILE';
+let SET_STATUS = 'SET_STATUS';
 
 let initialState = {
     posts: [
@@ -15,7 +16,8 @@ let initialState = {
         }
     ],
     newPostText: '',
-    profile: null
+    profile: null,
+    status: null
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -42,6 +44,11 @@ const profileReducer = (state = initialState, action) => {
                 ...state,
                 profile: action.profile
             };
+        case SET_STATUS:
+            return {
+                ...state,
+                status: action.status
+            };
         default:
             return state;
     }
@@ -50,11 +57,30 @@ const profileReducer = (state = initialState, action) => {
 export const addPost = () => ({type: ADD_POST});
 export const updatePostText = (text) => ({type: UPDATE_POST_TEXT, newText: text});
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
+export const setStatus = (status) => ({type: SET_STATUS, status});
 
 export const getUserProfile = (userId) => {
     return (dispatch) => {
         profileAPI.getProfile(userId).then(response => {
             dispatch(setUserProfile(response.data));
+        })
+    }
+};
+
+export const getStatus = (userId) => {
+    return (dispatch) => {
+        profileAPI.getStatus(userId).then(response => {
+            dispatch(setStatus(response.data));
+        })
+    }
+};
+
+export const updateStatus = (status) => {
+    return (dispatch) => {
+        profileAPI.updateStatus(status).then(response => {
+            if (response.data.resultCode === 0) {
+                dispatch(setStatus(status));
+            }
         })
     }
 };
