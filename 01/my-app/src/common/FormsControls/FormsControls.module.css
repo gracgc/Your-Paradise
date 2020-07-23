@@ -4,7 +4,7 @@
     border: solid red 2px;
 }
 
-.formControl.error span
+.formControl.error div
 {
     color: red;
 }
@@ -13,4 +13,8 @@
     border: red 1px solid;
     padding: 5px;
     color: red;
+}
+
+.blockArea  {
+    display: inline-flex;
 }

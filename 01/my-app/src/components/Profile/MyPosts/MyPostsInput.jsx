@@ -1,35 +1,35 @@
 import React from "react";
 import c from './MyPostsInput.module.css'
-import {maxLength, required} from "../../../utils/validators";
+import {maxLengthCreator, required} from "../../../utils/validators";
 import {Textarea} from "../../../common/FormsControls/FormsControls";
 import {Field, reduxForm} from "redux-form";
 
-
+const maxLength = maxLengthCreator(10);
 
 let AddNewPostForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
                 <Field className={c.textAreaPost} name="newPostText"
-                       component={Textarea}
                        placeholder={"New post..."}
-                       validate={[required, maxLength(1000)]}/>
+                       validate={[required, maxLength]}
+                       component={Textarea}
+                />
             </div>
             <div>
                 <button>Add post</button>
             </div>
         </form>
-    )
+    );
 };
 
 let AddNewPostFormRedux = reduxForm({form: "ProfileAddNewPostForm"})(AddNewPostForm);
 
 
 const MyPostsInput = (props) => {
-    debugger
+
     let onAddPost = (values) => {
             props.addPost(values.newPostText)
-
     };
 
     return (
