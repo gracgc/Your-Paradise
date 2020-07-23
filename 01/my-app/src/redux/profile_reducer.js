@@ -1,8 +1,6 @@
 import {profileAPI, userAPI} from "../api/api";
-import {setTotalUsersCount, setUsers, toogleFetch} from "./users_reducer";
 
 let ADD_POST = 'ADD_POST';
-let UPDATE_POST_TEXT = 'UPDATE_POST_TEXT';
 let SET_USER_PROFILE = 'SET_USER_PROFILE';
 let SET_STATUS = 'SET_STATUS';
 
@@ -15,7 +13,6 @@ let initialState = {
             img: 'https://o2label.ru/data/muzcat/authors/auth_img_590b5c59c74e8.jpg'
         }
     ],
-    newPostText: '',
     profile: null,
     status: null
 };
@@ -25,19 +22,13 @@ const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
             let newPost = {
-                id: 1,
-                text: state.newPostText,
+                id: 3,
+                text: action.newPostText,
                 img: 'https://o2label.ru/data/muzcat/authors/auth_img_590b5c59c74e8.jpg'
             };
             return {
                 ...state,
                 posts: [...state.posts, newPost],
-                newPostText: ''
-            };
-        case UPDATE_POST_TEXT:
-            return {
-                ...state,
-                newPostText: action.newText
             };
         case SET_USER_PROFILE:
             return {
@@ -54,8 +45,7 @@ const profileReducer = (state = initialState, action) => {
     }
 };
 
-export const addPost = () => ({type: ADD_POST});
-export const updatePostText = (text) => ({type: UPDATE_POST_TEXT, newText: text});
+export const addPost = (newPostText) => ({type: ADD_POST, newPostText});
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
 export const setStatus = (status) => ({type: SET_STATUS, status});
 

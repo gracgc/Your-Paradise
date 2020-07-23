@@ -4,8 +4,8 @@
     display: grid;
     grid-template-rows: 70px 1fr;
     height: 100vh;
-    overflow: hidden;
 }
+
 
 .header {
     display: block;

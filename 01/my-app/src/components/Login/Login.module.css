@@ -1,0 +1,18 @@
+.loginForm {
+    margin-left: 350px;
+    margin-top: 50px;
+    max-width: 400px;
+    border: black solid 1px;
+}
+
+.topLoginForm {
+    background-color: #0C0A7B;
+    color: white;
+    padding: 3px 0 3px 10px;
+}
+
+.mainLoginForm {
+    height: 160px;
+    background-color: #BCB9B9;
+    padding: 20px 0 3px 20px;
+}

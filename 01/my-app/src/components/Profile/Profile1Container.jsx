@@ -12,7 +12,10 @@ class Profile1Component extends React.Component {
     componentDidMount() {
         let userId = this.props.match.params.userId;
         if (!userId) {
-            userId = 3;
+            userId = this.props.authorizedUserId;
+            if (!userId) {
+                this.props.history.push("/login");
+            }
         }
         this.props.getUserProfile(userId);
         this.props.getStatus(userId)
@@ -30,7 +33,8 @@ const mapStateToProps = (state) => {
     return {
         profile: state.profilePage.profile,
         posts: state.profilePage.posts,
-        status: state.profilePage.status
+        status: state.profilePage.status,
+        authorizedUserId: state.auth.userId
     }
 };
 
