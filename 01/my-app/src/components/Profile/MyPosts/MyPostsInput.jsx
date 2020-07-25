@@ -4,7 +4,7 @@ import {maxLengthCreator, required} from "../../../utils/validators";
 import {Textarea} from "../../../common/FormsControls/FormsControls";
 import {Field, reduxForm} from "redux-form";
 
-const maxLength = maxLengthCreator(10);
+
 
 let AddNewPostForm = (props) => {
     return (
@@ -12,7 +12,6 @@ let AddNewPostForm = (props) => {
             <div>
                 <Field className={c.textAreaPost} name="newPostText"
                        placeholder={"New post..."}
-                       validate={[required, maxLength]}
                        component={Textarea}
                 />
             </div>
