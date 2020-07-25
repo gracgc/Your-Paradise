@@ -1,8 +1,7 @@
 import React from "react";
 import c from './MyPostsInput.module.css'
-import {maxLengthCreator, required} from "../../../utils/validators";
 import {Textarea} from "../../../common/FormsControls/FormsControls";
-import {Field, reduxForm} from "redux-form";
+import {Field, reduxForm, reset} from "redux-form";
 
 
 
@@ -27,8 +26,9 @@ let AddNewPostFormRedux = reduxForm({form: "ProfileAddNewPostForm"})(AddNewPostF
 
 const MyPostsInput = (props) => {
 
-    let onAddPost = (values) => {
-            props.addPost(values.newPostText)
+    let onAddPost = (values, dispatch) => {
+            props.addPost(values.newPostText);
+            dispatch(reset("ProfileAddNewPostForm"));
     };
 
     return (

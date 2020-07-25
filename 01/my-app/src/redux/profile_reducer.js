@@ -6,11 +6,13 @@ let SET_STATUS = 'SET_STATUS';
 
 let initialState = {
     posts: [
-        {id: 1, text: 'Bla bla', img: 'https://o2label.ru/data/muzcat/authors/auth_img_590b5c59c74e8.jpg'},
+        {
+            id: 1,
+            text: 'Bla bla'
+        },
         {
             id: 2,
-            text: 'Hi, Mark',
-            img: 'https://o2label.ru/data/muzcat/authors/auth_img_590b5c59c74e8.jpg'
+            text: 'Hi, Mark'
         }
     ],
     profile: null,
@@ -24,7 +26,6 @@ const profileReducer = (state = initialState, action) => {
             let newPost = {
                 id: 3,
                 text: action.newPostText,
-                img: 'https://o2label.ru/data/muzcat/authors/auth_img_590b5c59c74e8.jpg'
             };
             return {
                 ...state,

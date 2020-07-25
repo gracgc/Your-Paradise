@@ -11,7 +11,7 @@
 .post {
     width: 550px;
     border: solid 1px darkgrey;
-    border-radius: 2%;
+    border-radius: 3px;
     white-space:pre-wrap;
     word-wrap:break-word;
     padding: 10px;
