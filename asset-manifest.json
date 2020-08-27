@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Your-Paradise/static/css/main.7f4e775e.chunk.css",
-    "main.js": "/Your-Paradise/static/js/main.7e1c0a57.chunk.js",
-    "main.js.map": "/Your-Paradise/static/js/main.7e1c0a57.chunk.js.map",
+    "main.js": "/Your-Paradise/static/js/main.8975132c.chunk.js",
+    "main.js.map": "/Your-Paradise/static/js/main.8975132c.chunk.js.map",
     "runtime-main.js": "/Your-Paradise/static/js/runtime-main.6f31a985.js",
     "runtime-main.js.map": "/Your-Paradise/static/js/runtime-main.6f31a985.js.map",
     "static/js/2.e3ac18a0.chunk.js": "/Your-Paradise/static/js/2.e3ac18a0.chunk.js",
     "static/js/2.e3ac18a0.chunk.js.map": "/Your-Paradise/static/js/2.e3ac18a0.chunk.js.map",
     "index.html": "/Your-Paradise/index.html",
-    "precache-manifest.b05d0d94a366075a184c9b1691f43f7f.js": "/Your-Paradise/precache-manifest.b05d0d94a366075a184c9b1691f43f7f.js",
+    "precache-manifest.c15eee8aecde38f491bb4c2645b2c4d9.js": "/Your-Paradise/precache-manifest.c15eee8aecde38f491bb4c2645b2c4d9.js",
     "service-worker.js": "/Your-Paradise/service-worker.js",
     "static/css/main.7f4e775e.chunk.css.map": "/Your-Paradise/static/css/main.7f4e775e.chunk.css.map",
     "static/js/2.e3ac18a0.chunk.js.LICENSE.txt": "/Your-Paradise/static/js/2.e3ac18a0.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6f31a985.js",
     "static/js/2.e3ac18a0.chunk.js",
     "static/css/main.7f4e775e.chunk.css",
-    "static/js/main.7e1c0a57.chunk.js"
+    "static/js/main.8975132c.chunk.js"
   ]
 }
