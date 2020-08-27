@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Your-Paradise/static/css/main.7f4e775e.chunk.css",
-    "main.js": "/Your-Paradise/static/js/main.c1844369.chunk.js",
-    "main.js.map": "/Your-Paradise/static/js/main.c1844369.chunk.js.map",
+    "main.js": "/Your-Paradise/static/js/main.82187d27.chunk.js",
+    "main.js.map": "/Your-Paradise/static/js/main.82187d27.chunk.js.map",
     "runtime-main.js": "/Your-Paradise/static/js/runtime-main.6f31a985.js",
     "runtime-main.js.map": "/Your-Paradise/static/js/runtime-main.6f31a985.js.map",
     "static/js/2.c127e0d7.chunk.js": "/Your-Paradise/static/js/2.c127e0d7.chunk.js",
     "static/js/2.c127e0d7.chunk.js.map": "/Your-Paradise/static/js/2.c127e0d7.chunk.js.map",
     "index.html": "/Your-Paradise/index.html",
-    "precache-manifest.3956a4d80846905de89208819083e61f.js": "/Your-Paradise/precache-manifest.3956a4d80846905de89208819083e61f.js",
+    "precache-manifest.5a70343304e2b7eb09a61981ba4956ab.js": "/Your-Paradise/precache-manifest.5a70343304e2b7eb09a61981ba4956ab.js",
     "service-worker.js": "/Your-Paradise/service-worker.js",
     "static/css/main.7f4e775e.chunk.css.map": "/Your-Paradise/static/css/main.7f4e775e.chunk.css.map",
     "static/js/2.c127e0d7.chunk.js.LICENSE.txt": "/Your-Paradise/static/js/2.c127e0d7.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6f31a985.js",
     "static/js/2.c127e0d7.chunk.js",
     "static/css/main.7f4e775e.chunk.css",
-    "static/js/main.c1844369.chunk.js"
+    "static/js/main.82187d27.chunk.js"
   ]
 }
