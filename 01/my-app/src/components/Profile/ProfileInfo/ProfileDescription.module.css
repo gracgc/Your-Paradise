@@ -1,3 +1,18 @@
 .description {
-    padding: 20px;
+    padding: 25px;
+    width: 200px;
+}
+
+.saveButton {
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+    border: solid 2px #ffccff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.saveButton:hover {
+    border: solid 3px #ffccff;
+    background-color: bisque;
 }

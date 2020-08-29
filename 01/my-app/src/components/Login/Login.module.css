@@ -1,7 +1,7 @@
 .loginForm {
     margin-left: 350px;
     margin-top: 50px;
-    max-width: 400px;
+    max-width: 350px;
     border: black solid 1px;
 }
 
@@ -12,7 +12,20 @@
 }
 
 .mainLoginForm {
-    height: 160px;
+    height: 140px;
     background-color: #BCB9B9;
     padding: 20px 0 3px 20px;
+}
+
+.loginButton {
+    width: 100px;
+    height: 25px;
+    border: solid 2px #ffccff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginButton:hover {
+    border: solid 3px #ffccff;
+    background-color: bisque;
 }

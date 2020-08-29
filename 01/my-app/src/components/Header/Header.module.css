@@ -23,6 +23,7 @@ header img {
 
 .loginButtons {
     display: inline-flex;
+    cursor: pointer;
 }
 
 .loginBar {

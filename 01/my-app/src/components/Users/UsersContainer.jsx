@@ -20,10 +20,8 @@ class UserComponent extends React.Component {
         this.props.getUsers(pageNumber, this.props.pageSize)
     };
 
-
     render() {
         return <>
-            {this.props.isFetching ? <Preloader/> : null}
             <Users {...this.props} totalPageCount={this.props.totalPageCount}
                    pageSize={this.props.pageSize}
                    currentPage={this.props.currentPage}
@@ -33,11 +31,11 @@ class UserComponent extends React.Component {
                    users={this.props.users}
                    toogleFollowing={this.props.toogleFollowing}
                    followingInProgress={this.props.followingInProgress}
+                   isFetching={this.props.isFetching}
             />
         </>
     }
 }
-
 
 const mapStateToProps = (state) => {
     return {

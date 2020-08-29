@@ -1,0 +1,21 @@
+.selectedPage {
+    font-weight: bold;
+    background-color: bisque;
+}
+
+.pageNumber {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20%;
+    border: solid 2px #ffccff;
+
+}
+
+.pageNumber:hover {
+    background-color: bisque;
+}

@@ -1,0 +1,16 @@
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 20%;
+    border: solid 2px #ffccff;
+}
+
+.avatar:hover {
+    border:solid 3px #ffccff;
+}
+
+.fetchingGIF {
+    width: 100px;
+    margin: 20px;
+}

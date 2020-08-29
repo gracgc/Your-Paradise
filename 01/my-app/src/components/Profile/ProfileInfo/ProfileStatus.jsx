@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import edit_pencil from "../../../assets/images/edit_pencil.png";
 
 const ProfileStatus = (props) => {
 
@@ -14,24 +15,30 @@ const ProfileStatus = (props) => {
     };
 
     const deactivatedEditMode = () => {
-        setEditMode(false)
+        setEditMode(false);
         props.updateStatus(status)
     };
 
     const onStatusChange = (e) => {
         setStatus(e.currentTarget.value);
-    }
+    };
 
     return (
         <div>
             {!editMode &&
-            <div onClick={activatedEditMode}>
-                {props.status || 'How are you?(edit)'}
+            <div style={{width: "200px", display: "inline-flex"}}>
+                {props.status || (props.isOwner && 'How are you?')}
+                {props.isOwner && <img onClick={activatedEditMode} src={edit_pencil}
+                     style={{
+                         width: "13%",
+                         height: "13%",
+                         cursor: "pointer"
+                     }}></img>}
             </div>
             }
             {editMode &&
             <div>
-                <input onChange={onStatusChange} autoFocus={true} onBlur={deactivatedEditMode}
+                <input style={{width: "200px"}} onChange={onStatusChange} autoFocus={true} onBlur={deactivatedEditMode}
                        value={status}/>
             </div>
             }

@@ -1,13 +1,12 @@
 import {userAPI} from "../api/api";
 
-const FOLLOW = 'FOLLOW';
-const UNFOLLOW = 'UNFOLLOW';
-const SET_USERS = 'SET_USERS';
-const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
-const SET_TOTAL_COUNT = 'SET_TOTAL_COUNT';
-const TOOGLE_FETCH = ' TOOGLE_FETCH';
-const TOOGLE_FOLLOWING = 'TOOGLE_FOLLOWING';
-
+const FOLLOW = 'users/FOLLOW';
+const UNFOLLOW = 'users/UNFOLLOW';
+const SET_USERS = 'users/SET_USERS';
+const SET_CURRENT_PAGE = 'users/SET_CURRENT_PAGE';
+const SET_TOTAL_COUNT = 'users/SET_TOTAL_COUNT';
+const TOOGLE_FETCH = 'users/TOOGLE_FETCH';
+const TOOGLE_FOLLOWING = 'users/TOOGLE_FOLLOWING';
 
 let initialState = {
     users: [],
@@ -15,7 +14,7 @@ let initialState = {
     totalPageCount: 0,
     currentPage: 1,
     isFetching: false,
-    followingInProgress: []
+    followingInProgress: [],
 };
 
 const usersReducer = (state = initialState, action) => {
@@ -47,6 +46,10 @@ const usersReducer = (state = initialState, action) => {
                 users: action.users
             };
 
+        case SET_CURRENT_PAGE: {
+            return {...state, currentPage: action.currentPage}
+        }
+
         case SET_TOTAL_COUNT:
             return {
                 ...state,
@@ -75,43 +78,35 @@ const usersReducer = (state = initialState, action) => {
 export const accessFollow = (userId) => ({type: FOLLOW, userId});
 export const accessUnfollow = (userId) => ({type: UNFOLLOW, userId});
 export const setUsers = (users) => ({type: SET_USERS, users});
+export const setCurrentPage = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage});
 export const setTotalUsersCount = (totalPageCount) => ({type: SET_TOTAL_COUNT, totalPageCount});
 export const toogleFetch = (isFetching) => ({type: TOOGLE_FETCH, isFetching});
 export const toogleFollowing = (isFetching, userId) => ({type: TOOGLE_FOLLOWING, isFetching, userId});
 
-export const getUsers = (currentPage, pageSize) => {
-    return (dispatch) => {
-        dispatch(toogleFetch(true));
-        userAPI.getUsers(currentPage, pageSize).then(data => {
-            dispatch(toogleFetch(false));
-            dispatch(setUsers(data.items));
-            dispatch(setTotalUsersCount(data.totalCount));
-        })
-    }
+export const getUsers = (currentPage, pageSize) => async (dispatch) => {
+    dispatch(toogleFetch(true));
+    dispatch(setCurrentPage(currentPage));
+    let data = await userAPI.getUsers(currentPage, pageSize);
+    dispatch(toogleFetch(false));
+    dispatch(setUsers(data.items));
+    dispatch(setTotalUsersCount(data.totalCount));
 };
 
-export const follow = (userId) => {
-    return (dispatch) => {
-            dispatch(toogleFollowing(true, userId));
-            userAPI.follow(userId).then(response => {
-                if (response.data.resultCode == 0) {
-                    dispatch(accessFollow(userId))
-                }
-                dispatch(toogleFollowing(false, userId));
-        })
+const followUnfollowFunc = async (dispatch, userId, apiMethod, actionCreator) => {
+    dispatch(toogleFollowing(true, userId));
+    let response = await apiMethod(userId);
+    if (response.data.resultCode == 0) {
+        dispatch(actionCreator(userId))
     }
+    dispatch(toogleFollowing(false, userId));
 };
 
-export const unfollow = (userId) => {
-    return (dispatch) => {
-        dispatch(toogleFollowing(true, userId));
-        userAPI.unfollow(userId).then(response => {
-            if (response.data.resultCode == 0) {
-                dispatch(accessUnfollow(userId))
-            }
-            dispatch(toogleFollowing(false, userId));
-        })
-    }
+export const follow = (userId) => (dispatch) => {
+    followUnfollowFunc(dispatch, userId, userAPI.follow.bind(userAPI), accessFollow);
+};
+
+export const unfollow = (userId) => (dispatch) => {
+    followUnfollowFunc(dispatch, userId, userAPI.unfollow.bind(userAPI), accessUnfollow);
 };
 
 

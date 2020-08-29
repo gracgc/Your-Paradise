@@ -12,3 +12,17 @@
 
 .newPost textarea::-webkit-scrollbar {width:0px;}
 
+.postButton {
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+    border: solid 2px #ffccff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.postButton:hover {
+    border: solid 3px #ffccff;
+    background-color: bisque;
+}
+

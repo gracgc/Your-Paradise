@@ -15,6 +15,8 @@ import {compose} from "redux";
 import {initializeApp} from "./redux/app_reducer";
 import {connect} from "react-redux";
 
+
+
 class App extends Component {
     componentDidMount() {
         this.props.initializeApp();

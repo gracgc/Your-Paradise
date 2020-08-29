@@ -2,14 +2,13 @@ import React from "react";
 import {connect} from "react-redux";
 import Profile1 from "./Profile1";
 import {withRouter} from "react-router-dom";
-import {getStatus, getUserProfile, updateStatus} from "../../redux/profile_reducer";
+import {getStatus, getUserProfile, updateStatus, savePhoto, saveProfile} from "../../redux/profile_reducer";
 import {compose} from "redux";
-import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import Preloader from "../../common/Preloader/Preloader";
 
 class Profile1Component extends React.Component {
 
-
-    componentDidMount() {
+    refreshProfile() {
         let userId = this.props.match.params.userId;
         if (!userId) {
             userId = this.props.authorizedUserId;
@@ -21,10 +20,23 @@ class Profile1Component extends React.Component {
         this.props.getStatus(userId)
     }
 
+    componentDidMount() {
+        this.refreshProfile()
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.match.params.userId != prevProps.match.params.userId) {
+            this.refreshProfile()
+        }
+    }
+
     render() {
         return <>
-            <Profile1 {...this.props} profile={this.props.profile} posts={this.props.posts}
-                      status={this.props.status} updateStatus={this.props.updateStatus}/>
+            {this.props.isFetchingProfile ? <Preloader/> :
+            <Profile1 {...this.props} isFetching={this.props.isFetching} saveProfile={this.props.saveProfile}
+                      isOwner={!this.props.match.params.userId} profile={this.props.profile}
+                      posts={this.props.posts} status={this.props.status} updateStatus={this.props.updateStatus}
+                      savePhoto={this.props.savePhoto}/>}
         </>
     }
 }
@@ -34,7 +46,9 @@ const mapStateToProps = (state) => {
         profile: state.profilePage.profile,
         posts: state.profilePage.posts,
         status: state.profilePage.status,
-        authorizedUserId: state.auth.userId
+        authorizedUserId: state.auth.userId,
+        isFetching: state.profilePage.isFetching,
+        isFetchingProfile: state.profilePage.isFetchingProfile
     }
 };
 
@@ -42,7 +56,9 @@ export default compose(
     connect(mapStateToProps, {
         getUserProfile,
         getStatus,
-        updateStatus
+        updateStatus,
+        savePhoto,
+        saveProfile
     }),
     withRouter,
     // withAuthRedirect,

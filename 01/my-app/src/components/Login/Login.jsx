@@ -9,24 +9,24 @@ import {connect} from "react-redux";
 
 const LoginForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit} style={{display: "block"}}>
             <div>
                 <Field placeholder={'Email'} name={'email'}
                        validate={[required]}
                        component={Input}/>
             </div>
-            <div>
+            <div style={{marginTop: "10px"}}>
                 <Field placeholder={'Password'} name={'password'}
                        validate={[required]}
                        component={Input}/>
             </div>
-            <div>
+            <div  style={{marginTop: "10px", display: "inline-flex"}}>
                 <Field name={'rememberMe'} component={Input}
                        type={'checkbox'}/>
                 Don't forget me...
             </div>
-            <div>
-                <button>Login</button>
+            <div style={{marginTop: "10px", position: "relative", right: "-200px"}}>
+                <button className={c.loginButton}>Login</button>
             </div>
         </form>
     )
@@ -37,7 +37,7 @@ const LoginReduxForm = reduxForm({form: 'login'})(LoginForm);
 const Login = (props) => {
     const onSubmit = (formData) => {
         props.login(formData.email, formData.password, formData.rememberMe)
-    }
+    };
 
     if (props.isAuth) {
         return <Redirect to={'/profile'}/>

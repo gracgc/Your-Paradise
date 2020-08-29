@@ -10,7 +10,7 @@ const DialogItem = (props) => {
             <NavLink to={"/dialogs/" + props.id}> {props.name} </NavLink>
         </div>
     )
-}
+};
 
 const Massage = (props) => {
     return (
