@@ -1,9 +1,9 @@
 import React from "react";
-import c from '../User/User.module.css'
+import c from './../Friends.module.css'
 import userPhoto from '../../../assets/images/user.jpg';
 import {NavLink} from "react-router-dom";
 
-const User = ({user, followingInProgress, unfollow, follow}) => {
+const Friend = ({user, followingInProgress, unfollow, follow}) => {
 
     return (
         <div>
@@ -34,6 +34,6 @@ const User = ({user, followingInProgress, unfollow, follow}) => {
 };
 
 
-export default User;
+export default Friend;
 
 

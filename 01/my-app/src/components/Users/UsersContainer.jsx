@@ -6,7 +6,6 @@ import {
     unfollow, getUsers
 } from "../../redux/users_reducer";
 import Users from "./Users";
-import Preloader from "../../common/Preloader/Preloader";
 import {compose} from "redux";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 
@@ -45,7 +44,6 @@ const mapStateToProps = (state) => {
         currentPage: state.usersPage.currentPage,
         isFetching: state.usersPage.isFetching,
         followingInProgress: state.usersPage.followingInProgress
-
     }
 };
 

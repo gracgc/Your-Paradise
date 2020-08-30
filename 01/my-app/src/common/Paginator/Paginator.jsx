@@ -3,7 +3,7 @@ import c from './Paginator.module.css'
 import classNames from 'classnames';
 
 
-const Paginator = ({totalItemCount, portionSize = 10, ...props}) => {
+const Paginator = ({totalItemCount, portionSize = 7, ...props}) => {
 
     let pagesCount = Math.ceil(totalItemCount / props.pageSize);
     let pages = [];
@@ -32,7 +32,7 @@ const Paginator = ({totalItemCount, portionSize = 10, ...props}) => {
                     {p}
                 </div>
             })}
-            {portionCount >portionNumber &&
+            {portionCount > portionNumber &&
                 <div className={c.pageNumber} onClick={() => {setPortionNumber(portionNumber+1)}}>Next</div>}
         </div>
     )

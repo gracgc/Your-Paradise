@@ -3,6 +3,7 @@ import {userAPI} from "../api/api";
 const FOLLOW = 'users/FOLLOW';
 const UNFOLLOW = 'users/UNFOLLOW';
 const SET_USERS = 'users/SET_USERS';
+const SET_FRIENDS = 'users/SET_FRIENDS';
 const SET_CURRENT_PAGE = 'users/SET_CURRENT_PAGE';
 const SET_TOTAL_COUNT = 'users/SET_TOTAL_COUNT';
 const TOOGLE_FETCH = 'users/TOOGLE_FETCH';
@@ -15,6 +16,7 @@ let initialState = {
     currentPage: 1,
     isFetching: false,
     followingInProgress: [],
+    friends: []
 };
 
 const usersReducer = (state = initialState, action) => {
@@ -40,10 +42,17 @@ const usersReducer = (state = initialState, action) => {
                     return u;
                 })
             };
+
         case SET_USERS:
             return {
                 ...state,
                 users: action.users
+            };
+
+        case SET_FRIENDS:
+            return {
+                ...state,
+                friends: action.friends.filter(f => (f.followed == true))
             };
 
         case SET_CURRENT_PAGE: {
@@ -78,6 +87,7 @@ const usersReducer = (state = initialState, action) => {
 export const accessFollow = (userId) => ({type: FOLLOW, userId});
 export const accessUnfollow = (userId) => ({type: UNFOLLOW, userId});
 export const setUsers = (users) => ({type: SET_USERS, users});
+export const setFriends = (friends) => ({type: SET_FRIENDS, friends});
 export const setCurrentPage = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage});
 export const setTotalUsersCount = (totalPageCount) => ({type: SET_TOTAL_COUNT, totalPageCount});
 export const toogleFetch = (isFetching) => ({type: TOOGLE_FETCH, isFetching});
@@ -92,6 +102,13 @@ export const getUsers = (currentPage, pageSize) => async (dispatch) => {
     dispatch(setTotalUsersCount(data.totalCount));
 };
 
+export const getFriends = (currentPage, pageSize) => async (dispatch) => {
+    dispatch(setCurrentPage(currentPage));
+    let data = await userAPI.getUsers(currentPage, pageSize=100);
+    dispatch(setFriends(data.items));
+    dispatch(setTotalUsersCount(data.totalCount));
+};
+
 const followUnfollowFunc = async (dispatch, userId, apiMethod, actionCreator) => {
     dispatch(toogleFollowing(true, userId));
     let response = await apiMethod(userId);
@@ -99,6 +116,7 @@ const followUnfollowFunc = async (dispatch, userId, apiMethod, actionCreator) =>
         dispatch(actionCreator(userId))
     }
     dispatch(toogleFollowing(false, userId));
+    dispatch(getFriends());
 };
 
 export const follow = (userId) => (dispatch) => {

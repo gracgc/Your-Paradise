@@ -2,7 +2,6 @@ import React from "react";
 import c from './MyPostsInput.module.css'
 import {Textarea} from "../../../common/FormsControls/FormsControls";
 import {Field, reduxForm, reset} from "redux-form";
-import {required} from "../../../utils/validators";
 
 
 let AddNewPostForm = (props) => {
