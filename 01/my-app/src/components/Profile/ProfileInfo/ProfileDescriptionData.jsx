@@ -2,7 +2,7 @@ import React from "react";
 import c from './ProfileDescription.module.css'
 import {Field} from "redux-form";
 import {maxLengthCreator, required} from "../../../utils/validators";
-import {Input, Textarea} from "../../../common/FormsControls/FormsControls";
+import {Input} from "../../../common/FormsControls/FormsControls";
 import {reduxForm} from "redux-form";
 
 const maxLength20 = maxLengthCreator(20);
