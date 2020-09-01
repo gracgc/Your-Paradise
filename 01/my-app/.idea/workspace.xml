@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22d004ce-363c-4c27-ab30-581a62d12046" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +209,7 @@
       <workItem from="1598698931086" duration="19615000" />
       <workItem from="1598785043381" duration="14031000" />
       <workItem from="1598892324172" duration="4677000" />
-      <workItem from="1598974044898" duration="1099000" />
+      <workItem from="1598974044898" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1588249013285</created>

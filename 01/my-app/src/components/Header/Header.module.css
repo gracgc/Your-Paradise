@@ -5,7 +5,7 @@ header img {
 .logo {
     border: black solid 3px;
     font-size: large;
-    width: 120px;
+    max-width: 150px;
     height: 40px;
     font-family: fantasy;
     position: absolute;
