@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Your-Paradise/static/css/main.ff7e89f8.chunk.css",
+    "main.css": "/Your-Paradise/static/css/main.a1ae07eb.chunk.css",
     "main.js": "/Your-Paradise/static/js/main.c7f5ce42.chunk.js",
     "main.js.map": "/Your-Paradise/static/js/main.c7f5ce42.chunk.js.map",
     "runtime-main.js": "/Your-Paradise/static/js/runtime-main.6f31a985.js",
@@ -8,16 +8,16 @@
     "static/js/2.6e2821dd.chunk.js": "/Your-Paradise/static/js/2.6e2821dd.chunk.js",
     "static/js/2.6e2821dd.chunk.js.map": "/Your-Paradise/static/js/2.6e2821dd.chunk.js.map",
     "index.html": "/Your-Paradise/index.html",
-    "precache-manifest.8ff0633f7068993a840a7ab5f688c05a.js": "/Your-Paradise/precache-manifest.8ff0633f7068993a840a7ab5f688c05a.js",
+    "precache-manifest.5d0d766972f07c1a622759dbb682876e.js": "/Your-Paradise/precache-manifest.5d0d766972f07c1a622759dbb682876e.js",
     "service-worker.js": "/Your-Paradise/service-worker.js",
-    "static/css/main.ff7e89f8.chunk.css.map": "/Your-Paradise/static/css/main.ff7e89f8.chunk.css.map",
+    "static/css/main.a1ae07eb.chunk.css.map": "/Your-Paradise/static/css/main.a1ae07eb.chunk.css.map",
     "static/js/2.6e2821dd.chunk.js.LICENSE.txt": "/Your-Paradise/static/js/2.6e2821dd.chunk.js.LICENSE.txt",
     "static/media/Dual Ring-1s-200px.gif": "/Your-Paradise/static/media/Dual Ring-1s-200px.1020fd8e.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.6f31a985.js",
     "static/js/2.6e2821dd.chunk.js",
-    "static/css/main.ff7e89f8.chunk.css",
+    "static/css/main.a1ae07eb.chunk.css",
     "static/js/main.c7f5ce42.chunk.js"
   ]
 }

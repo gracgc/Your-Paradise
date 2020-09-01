@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1885ddd6b28b0b51372107cd1b44f489",
+    "revision": "223964c55f18020849bd2cc000fee168",
     "url": "/Your-Paradise/index.html"
   },
   {
-    "revision": "576f4d6a53f61cbd1cfd",
-    "url": "/Your-Paradise/static/css/main.ff7e89f8.chunk.css"
+    "revision": "ccfd6965c87baafd8767",
+    "url": "/Your-Paradise/static/css/main.a1ae07eb.chunk.css"
   },
   {
     "revision": "d9f74d67be77824e7351",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Your-Paradise/static/js/2.6e2821dd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "576f4d6a53f61cbd1cfd",
+    "revision": "ccfd6965c87baafd8767",
     "url": "/Your-Paradise/static/js/main.c7f5ce42.chunk.js"
   },
   {
