@@ -56,7 +56,8 @@ const Login = (props) => {
             <div className={c.loginForm}>
                 <div className={c.topLoginForm}>Is it a dream?</div>
                 <div className={c.mainLoginForm}>
-                    <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl}/>
+                    <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl}
+                                    initialValues={{email: "free@samuraijs.com", password: "free"}}/>
                 </div>
             </div>
         </div>
