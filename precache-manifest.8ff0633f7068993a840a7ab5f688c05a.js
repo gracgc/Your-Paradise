@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c75969a3880a2e0ebb593fd7a7cb85b",
+    "revision": "1885ddd6b28b0b51372107cd1b44f489",
     "url": "/Your-Paradise/index.html"
   },
   {
-    "revision": "85aac5fa83d98e8aa726",
-    "url": "/Your-Paradise/static/css/main.3f9c6248.chunk.css"
+    "revision": "576f4d6a53f61cbd1cfd",
+    "url": "/Your-Paradise/static/css/main.ff7e89f8.chunk.css"
   },
   {
-    "revision": "0dbab06b8f5c986049d3",
-    "url": "/Your-Paradise/static/js/2.e3ac18a0.chunk.js"
+    "revision": "d9f74d67be77824e7351",
+    "url": "/Your-Paradise/static/js/2.6e2821dd.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Your-Paradise/static/js/2.e3ac18a0.chunk.js.LICENSE.txt"
+    "url": "/Your-Paradise/static/js/2.6e2821dd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "85aac5fa83d98e8aa726",
-    "url": "/Your-Paradise/static/js/main.e7420eb2.chunk.js"
+    "revision": "576f4d6a53f61cbd1cfd",
+    "url": "/Your-Paradise/static/js/main.c7f5ce42.chunk.js"
   },
   {
     "revision": "eac65c96483e7754c6ff",
