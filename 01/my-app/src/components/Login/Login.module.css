@@ -1,4 +1,5 @@
 .loginForm {
+    display: block;
     margin-left: 350px;
     margin-top: 50px;
     max-width: 350px;
@@ -12,7 +13,9 @@
 }
 
 .mainLoginForm {
-    height: 140px;
+    display: flex;
+    min-width: 330px;
+    max-height: 300px;
     background-color: #BCB9B9;
     padding: 20px 0 3px 20px;
 }
