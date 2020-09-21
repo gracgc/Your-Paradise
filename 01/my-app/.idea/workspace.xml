@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="22d004ce-363c-4c27-ab30-581a62d12046" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDescriptionData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDescriptionData.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +210,10 @@
       <workItem from="1598698931086" duration="19615000" />
       <workItem from="1598785043381" duration="14031000" />
       <workItem from="1598892324172" duration="4677000" />
-      <workItem from="1598974044898" duration="3443000" />
+      <workItem from="1598974044898" duration="4316000" />
+      <workItem from="1599601611608" duration="1569000" />
+      <workItem from="1599765904959" duration="5715000" />
+      <workItem from="1599851066754" duration="2796000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1588249013285</created>

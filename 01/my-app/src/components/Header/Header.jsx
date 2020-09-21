@@ -8,7 +8,7 @@ const Header = (props) => {
     return (
         <header className={c.header}>
             <div className={c.logo}>
-                <div className={c.logoText}>YOUR PARADISE</div>
+                YOUR PARADISE
             </div>
             <div className={c.loginBar}>
                 {props.isAuth
