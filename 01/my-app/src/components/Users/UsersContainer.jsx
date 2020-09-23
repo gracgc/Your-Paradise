@@ -28,6 +28,7 @@ class UserComponent extends React.Component {
                    follow={this.props.follow}
                    unfollow={this.props.unfollow}
                    users={this.props.users}
+                   friends={this.props.friends}
                    toogleFollowing={this.props.toogleFollowing}
                    followingInProgress={this.props.followingInProgress}
                    isFetching={this.props.isFetching}
@@ -39,6 +40,7 @@ class UserComponent extends React.Component {
 const mapStateToProps = (state) => {
     return {
         users: state.usersPage.users,
+        friends: state.usersPage.friends,
         pageSize: state.usersPage.pageSize,
         totalPageCount: state.usersPage.totalPageCount,
         currentPage: state.usersPage.currentPage,
