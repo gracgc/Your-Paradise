@@ -3,7 +3,6 @@ import {userAPI} from "../api/api";
 const FOLLOW = 'users/FOLLOW';
 const UNFOLLOW = 'users/UNFOLLOW';
 const SET_USERS = 'users/SET_USERS';
-const SET_FRIENDS = 'users/SET_FRIENDS';
 const SET_CURRENT_PAGE = 'users/SET_CURRENT_PAGE';
 const SET_TOTAL_COUNT = 'users/SET_TOTAL_COUNT';
 const TOOGLE_FETCH = 'users/TOOGLE_FETCH';

@@ -11,7 +11,7 @@ class DialogsComponent extends React.Component {
     render() {
         return <>
             {this.props.isFetching ? <Preloader/> : null}
-            <Dialogs {...this.props} dialogs={this.props.dialogs} massages={this.props.massages}
+            <Dialogs {...this.props} dialogs={this.props.dialogs} messages={this.props.messages}
             />
         </>
     }
@@ -20,7 +20,7 @@ class DialogsComponent extends React.Component {
 const mapStateToProps = (state) => {
     return {
         dialogs: state.dialogPage.dialogs,
-        massages: state.dialogPage.massages
+        messages: state.dialogPage.messages
     }
 };
 

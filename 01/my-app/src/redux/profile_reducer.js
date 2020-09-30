@@ -7,6 +7,7 @@ let SAVE_PHOTO_SUCCESS = 'profile/SAVE_PHOTO_SUCCESS';
 const TOOGLE_FETCH = 'profile/TOOGLE_FETCH';
 const TOOGLE_FETCH_PROFILE = 'profile/TOOGLE_FETCH_PROFILE';
 
+
 let initialState = {
     posts: [
         {

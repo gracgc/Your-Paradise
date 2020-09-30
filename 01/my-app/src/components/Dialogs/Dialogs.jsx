@@ -12,10 +12,10 @@ const DialogItem = (props) => {
     )
 };
 
-const Massage = (props) => {
+const Message = (props) => {
     return (
-        <div className={c.massage}>
-            {props.massage}
+        <div className={c.message}>
+            {props.message}
         </div>
     )
 };
@@ -25,15 +25,15 @@ const Massage = (props) => {
 
 const Dialogs = (props) => {
     let dialogElement = props.dialogs.map((d) => <DialogItem name={d.name} id={d.id}/>);
-    let massageElement = props.massages.map((m) => <Massage massage={m.massage} id={m.id}/>);
+    let messageElement = props.messages.map((m) => <Message massage={m.message} id={m.id}/>);
 
     return (
         <div className={c.dialogs}>
             <div className={c.usersColumn}>
                 {dialogElement}
             </div>
-            <div className={c.massages}>
-                {massageElement}
+            <div className={c.messages}>
+                {messageElement}
             </div>
         </div>
     )
